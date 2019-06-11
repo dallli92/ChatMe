@@ -1,5 +1,6 @@
 package com.dalilandoulsi.chatme
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
 import android.support.design.widget.Snackbar
@@ -41,7 +42,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun loginBtnNavClick(view: View) {}
+    fun loginBtnNavClick(view: View) {
+        val loginintent = Intent(this, LoginActivity::class.java)
+        startActivity(loginintent)
+
+    }
+
     fun addChanneClick(view: View) {}
     fun sendMsgBtnClicked(view: View) {}
 }
